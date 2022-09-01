@@ -1,0 +1,42 @@
+{% extends '_layout.html' %}
+
+{% block title %}
+Product Updation
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 mt-3">
+            <div class="text-center text-warning greatvibesfont size-35 mb-3">
+                Update Service:
+            </div>
+            <form method="POST" action="{{ url_for('update_service', username=username, service_name = service.product_name) }}" class="form text-center text-white">
+                {{ serviceForm.hidden_tag() }}
+                <div class="row">
+                    <div class="col-md-3">
+                        <label class="form-label">Previous Service name:</label>
+                    </div>
+                    <div class="col-md-3">
+                            <label class="form-control">{{ service.product_name }}</label>
+                    </div>
+                    <div class="col-md-3">
+                        New {{ serviceForm.service_name.label(class="form-label") }}
+                    </div>
+                    
+                    <div class="col-md-3">
+                        {{ serviceForm.service_name(class="form-control") }}
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    {{ serviceForm.submit(class="btn btn-sm btn-success") }}
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+{% endblock %}

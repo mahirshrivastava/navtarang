@@ -1,0 +1,47 @@
+{% extends '_layout.html' %}
+
+{% block title %}
+Booking List
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="text-danger greatvibesfont size-35 text-center mt-3 mb-2">Booking List</div>
+            <table class="table table-responsive table-dark">
+                <thead>
+                    <tr class="text-danger">
+                        <th>S/No.</th>
+                        <th>Customer Name</th>
+                        <th>Event Date</th>
+                        <th>Contact</th>
+                        <th>Alternate Contact</th>
+                        <th>requirements</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% set counter = [] %}
+                    {% for list in bookingList %}
+                    {% set _= counter.append(1) %}
+                    <tr>
+                        <td>{{ counter|length }}</td>
+                        <td>{{ list.customer_name }}</td>
+                        <td>{{ list.event_date }}</td>
+                        <td>{{ list.contact_detail }}</td>
+                        <td>{{ list.alternate_contact }}</td>
+                        <td>{{ list.requirements }}</td>
+                        <td>{{ list.address }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+
+{% endblock %}
