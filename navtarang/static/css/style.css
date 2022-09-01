@@ -1,0 +1,236 @@
+/* Common */
+.timesnewroman
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+.transition
+{
+    transition: 0.7s;
+}
+.color
+{
+    color: rgb(198, 198, 198) !important;
+}
+@font-face {
+    font-family: 'great-vibes.regular';
+    src: url('../Font/great-vibes.regular.ttf');
+}
+.hoverBg-green:hover
+{
+    background-color: green !important;
+}
+.greatvibesfont
+{
+    font-family: 'great-vibes.regular';   
+}
+.bg-cream
+{
+    background-color: whitesmoke;
+}
+.text-grey
+{
+    color: grey;
+}
+.size-14
+{
+    font-size: 14px !important;
+    word-wrap: break-word;
+}
+.size-60
+{
+    font-size: 60px !important;
+    word-wrap: break-word;
+}
+.size-40
+{
+    font-size: 40px !important;
+    word-wrap: break-word;
+}
+.size-35
+{
+    font-size: 35px !important;
+}
+.size-32
+{
+    word-wrap: break-word;
+    font-size: 32px !important;
+}
+.size-30
+{
+    font-size: 30px !important; 
+}
+.size-25
+{
+    font-size: 25px !important;
+}
+.size-20
+{
+    font-size: 20px;
+}
+.size-16
+{
+    font-size: 16px;
+}
+.size-12
+{
+    font-size: 12px;
+}
+/* HEADER */
+.ntoimage
+{
+    width: 300px;
+}
+#menu0
+{
+    height: 50px !important;
+}
+#headermenu
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s;
+}
+#headermenu a
+{
+    color: darkgray;
+}
+
+#headermenu a:hover
+{
+    color: red;
+}
+
+#headermenu:hover{
+    font-size: 16px;
+}
+.ntologo
+{
+    width: 50px !important;
+}
+/* MENU BAR */
+#menu1
+{
+    display: block;
+}
+#gayab1
+{
+    display: none;
+}
+.changeBg-red a:hover
+{
+    background-color: red;
+}
+
+/* CONTENT IMAGES */
+.card
+{
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+#indexcard img
+{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+#indexcardgap
+{
+    text-align: center;
+    margin-bottom: 1%;
+    border: none;
+}
+#indexcard
+{
+    margin: auto;
+    text-align: center;
+    padding-top: 30px ;
+    width: 100%;
+}
+#indexdj
+{
+   border: 1px solid black; 
+   overflow: hidden;
+   background-color: rgba(0, 0, 0, 0.5); 
+   color: white;
+   transition: 0.5s;
+   margin-top: 20%;
+   font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
+}
+#indexdj:hover
+{
+    font-size: 30px;
+}
+#div-container1
+{
+    width: 400px;
+}
+.card-img1 a
+{
+    position: absolute;
+}
+.card-img1 img
+{   
+    width: 550px;
+    height: 300px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: 1s;
+    overflow: hidden;
+}
+.card-img2 img
+{   
+    width: 550px;
+    height: 300px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: 1s;
+    overflow: hidden;
+}
+/* Content 2 */
+#div_card1
+{
+    overflow: hidden;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+}
+#youtube_card1
+{
+    text-align: center;
+    position: absolute;
+    width: 400px;
+    margin-top: -300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+#div_card1:hover #youtube_card1{
+    margin-top: 0px;
+}
+#youtube_card1 img
+{
+    text-align: center;
+    width: 250px;
+}
+#youtube_card1 p
+{
+    color: white;
+    text-align: center;
+}
+#card1_img1
+{
+    width: 450px;
+    height: 300px;
+}
+#dj-card1 .card-text{
+    text-align: justify;
+    padding: 10px;
+    line-height: 40px;
+}
+#dj-card1 ol{
+    text-align: justify;
+}
