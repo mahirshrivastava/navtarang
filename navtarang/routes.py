@@ -206,11 +206,13 @@ class Routes:
                 return render_template('changePassword.html', username=username, changePassword=change_password)
             if request.method == 'POST':
                 if change_password.validate_on_submit():
-                    if user.check_password(change_password.password.data):
-                        user.password = change_password.newPassword.data
-                        db.session.commit()
-                        flash(f"{username}'s password changed successfully! ", category='success')
-                        return redirect(url_for('home_page', username=username))
+                    if change_password.newPassword.data == change_password.password.data:
+                        flash(f"New Password can't be same as current password", category="danger")
+                        return redirect(url_for('changePassword', username=username))
+                    user.password = change_password.newPassword.data
+                    db.session.commit()
+                    flash(f"{username}'s password changed successfully! ", category='success')
+                    return redirect(url_for('home_page', username=username))
                     else:
                         flash(f"Invalid Old Password!", category="danger")
                         return redirect(url_for('changePassword', username=username))
