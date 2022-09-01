@@ -1,0 +1,60 @@
+{% extends '_layout.html' %}
+{% block title %}
+About
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid" id="indexcontent-1">
+  <div class="container mb-5">
+    <div class="container-fluid text-center mb-3">
+    </div>
+    <div class="container-fluid text-center"> 
+      <a href="{{ url_for('static', filename='uploads/banner.pdf') }}" class="text-decoration-none">
+      <img style="width: 50%; height: 100%;" src="{{ url_for('static', filename='img/banner_img.png') }}" alt="Nav Tarang Banner">
+      </a>
+    </div>
+  </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card bg-black">
+              <div class="card-body bg-dark text-white rounded-2" >
+                <div class="row">
+                  <div class="col">
+                    <img class="rounded-2 shadow-lg card-img-start" style="width: 96%; height: 100%;" src="{{ url_for('static', filename='img/Narayan Swaroop Shrivastava.jpeg') }}" alt="Narayan Swaroop">
+                  </div>
+                  <div class="col">
+                    <h5 class="card-title mt-2 text-danger">Narayan Swaroop Shrivastava</h5>
+                    <p class="card-text">CEO and Founder</p>
+                    <a class="btn d-block btn-sm btn-danger" href="tel://9414133822">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6"> 
+            <div class="card bg-black">
+              <div class="card-body bg-dark text-white rounded-2" >
+                <div class="row">
+                  <div class="col">
+                    <img class="rounded-2 shadow-lg card-img-start" style="width: 100%; height: 100%; " src="{{ url_for('static', filename='img/Mahir Shrivastava.png') }}" alt="Mahir Shrivastava">
+                  </div>
+                  <div class="col">
+                    <h5 class="card-title mt-2 text-danger">Mahir Shrivastava</h5>
+                    <p class="card-text">Manager</p>
+                    <a class="btn d-block btn-sm btn-danger" href="tel://9079189607">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
